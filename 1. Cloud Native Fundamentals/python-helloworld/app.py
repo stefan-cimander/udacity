@@ -1,5 +1,6 @@
 from flask import Flask, json
 import logging
+
 app = Flask(__name__)
 
 logging.basicConfig(filename="app.log", level=logging.DEBUG, format=f"%(asctime)s, %(message)s")
