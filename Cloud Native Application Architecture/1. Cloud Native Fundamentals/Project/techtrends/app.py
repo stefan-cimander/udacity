@@ -93,5 +93,5 @@ def create():
 
 # Configure the logging and start the application on port 3111
 if __name__ == "__main__":
-    logging.basicConfig(level=logging.DEBUG, format=f"%(asctime)s, %(message)s")
+    logging.basicConfig(format='%(asctime)s, %(message)s', level=logging.DEBUG)
     app.run(host='0.0.0.0', port='3111')
