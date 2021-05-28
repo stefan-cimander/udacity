@@ -1,3 +1,6 @@
+# Databases
+*.db
+
 # Caches
 __pycache__/
 
