@@ -9,3 +9,6 @@ __pycache__/
 
 # Vagrant
 .vagrant/
+
+# macOS
+.DS_Store
