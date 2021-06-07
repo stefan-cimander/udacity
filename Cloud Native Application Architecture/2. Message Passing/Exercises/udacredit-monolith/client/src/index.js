@@ -13,19 +13,11 @@ class App extends React.Component {
     }
 
     loadCustomers = () => {
-        fetch("http://localhost:5000/api/customers")
+        fetch("http://localhost:5001/api/customers")
             .then(res => res.json())
             .then(
-                (result) => {
-                    this.setState({
-                        customers: result.customers,
-                    });
-                },
-                (error) => {
-                    this.setState({
-                        error,
-                    });
-                }
+                result => this.setState({ customers: result.customers }),
+                error => this.setState({ error })
             )
     }
 
@@ -33,16 +25,8 @@ class App extends React.Component {
         fetch("http://localhost:5000/api/employees")
             .then(res => res.json())
             .then(
-                (result) => {
-                    this.setState({
-                        employees: result.employees,
-                    });
-                },
-                (error) => {
-                    this.setState({
-                        error,
-                    });
-                }
+                result => this.setState({ employees: result.employees }),
+                error => this.setState({ error })
             )
     }
 
